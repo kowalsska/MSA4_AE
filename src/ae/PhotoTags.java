@@ -160,7 +160,11 @@ public class PhotoTags {
 			}
 		}
 	}
-	
+	//
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//
+	// TASK 2
+	//
 	//Method for returning five tags with highest co-occurrence values from the Map
 	public List<List<Object>> findFiveHighestValues(Map<String, Double> singleMap) {
 		List<Double> allItems = new ArrayList<>();
@@ -188,11 +192,7 @@ public class PhotoTags {
 
 		return topTags;
 	}
-	//
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	//
-	// TASK 2
-	//
+	
 	// Method for getting top 5 recommendations without IDF
 	public void topFive(Map<String, Map<String, Double>> tagsCoocurrence) {
 		//Looking for top 5 tags which co-occur with the following tags: water, people, london
